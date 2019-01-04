@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <h1>Battle Fortune</h1>
+    {% for post in posts %}
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2" href="#">{{ post.game }}</a>
+          <small class="text-muted">Simulations: {{ post.rounds }}</small>
+        </div>
+        <h2><a class="article-title" href="#">{{ post.nation }}</a></h2>
+        <p class="article-content">Win Chance: {{ post.winratio}} || Expected Gold Cost: {{ post.gcost }} || Expected Return: {{ post.return}}</p>
+      </div>
+    </article>
+    {% endfor %}
+{% endblock content %}
