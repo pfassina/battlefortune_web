@@ -102,3 +102,5 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+/battlefortuneweb/secret.txt
+/battlefortuneweb/test.py
