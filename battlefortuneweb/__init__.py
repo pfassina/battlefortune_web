@@ -26,7 +26,7 @@ def create_app(config_class=Config):
     from battlefortuneweb.users.routes import users
     from battlefortuneweb.posts.routes import posts
     from battlefortuneweb.main.routes import main
-    from battlefortuneweb.erros.handlers import errors
+    from battlefortuneweb.errors.handlers import errors
     app.register_blueprint(users)
     app.register_blueprint(posts)
     app.register_blueprint(main)
